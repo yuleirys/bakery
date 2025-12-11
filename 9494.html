@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Menú de Navegación Pastelería</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fff4f8;
+    }
+
+    /* BARRA DE NAVEGACIÓN */
+    nav {
+        background: #ff9ecf;
+        padding: 10px 0;
+        box-shadow: 0 4px 5px rgba(255, 104, 157, 0.3);
+    }
+
+    /* LISTA PRINCIPAL */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    /* ENLACES */
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 14px;
+        display: block;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        background: #ff76b7;
+    }
+
+    /* SUBMENÚ */
+    nav ul li ul {
+        position: absolute;
+        top: 40px;
+        background: white;
+        padding: 10px 0;
+        width: 170px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        display: none;
+    }
+
+    /* ITEMS DEL SUBMENÚ */
+    nav ul li ul li a {
+        color: #ff4f91;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    nav ul li ul li a:hover {
+        background: #ffe1eb;
+    }
+
+    /* ACCIÓN DE MOSTRAR SUBMENÚ */
+    nav ul li:hover ul {
+        display: block;
+    }
+</style>
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Inicio 🎀</a></li>
+
+        <li>
+            <a href="#">Productos 🍰 ▾</a>
+            <ul>
+                <li><a href="#">Pasteles</a></li>
+                <li><a href="#">Cupcakes</a></li>
+                <li><a href="#">Galletas</a></li>
+                <li><a href="#">Repostería Fina</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Sabores 🍓 ▾</a>
+            <ul>
+                <li><a href="#">Vainilla</a></li>
+                <li><a href="#">Chocolate</a></li>
+                <li><a href="#">Red Velvet</a></li>
+                <li><a href="#">Fresa</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Ofertas 🎉</a></li>
+
+        <li>
+            <a href="#">Contacto 📞 ▾</a>
+            <ul>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Correo</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<h2 style="text-align:center; margin-top:50px; color:#ff4f91;">
+    Menú de navegación para mi Pastelería ✨🍩
+</h2>
+
+</body>
+</html>
